@@ -1,0 +1,60 @@
+$mainColor:aqua;
+
+$secondaryColor:aqua;
+.App {
+  background-color: $mainColor;
+}
+
+
+.me0 {
+    background-image: url('./bg2.jpg');
+    /* Set a specific height */
+    min-height: 600px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.me1 {
+  float:left;
+}
+.me2 {
+  float:right;
+}
+.me3 {
+  float:center;
+}
+.me4 {
+  float:right;
+}
+
+.container {
+  display:flex;
+}
+.header {
+  height:100px;
+}
+.left{
+  flex-direction: row;
+}
+.right {
+  background-color: #fff;
+}
+.center{
+  background-color: #fff;
+}
+.resume{
+  text-decoration: none;
+  &:hover{
+    color:$secondaryColor;
+  }
+  &:visited{
+    color:$mainColor;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, span, ul, li{
+  font-family: 'Josefin Sans', sans-serif;
+}
